@@ -1,0 +1,29 @@
+{
+  "name": "DynamoDB Transaction Service",
+  "version": "1.0.0",
+  "description": "Payment service with getbalance and transact functionality.",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "start": " npm run build && node dist/server.js",
+    "build": "rm -rf dist && tsc"
+  },
+  "keywords": [],
+  "author": "Anuj Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.656.0",
+    "@aws-sdk/util-dynamodb": "^3.623.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "uuid": "^13.0.0",
+    "zod": "^4.1.12"
+  }
+}
